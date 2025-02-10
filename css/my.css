@@ -1,0 +1,172 @@
+/* sell_info */
+.sell_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 16px;
+}
+.sell_info .product_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.sell_info .product_img.not_login::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url("../img/ico-unknown.svg") no-repeat center;
+}
+.sell_info .num {
+  font-size: 12px;
+  font-weight: 300;
+  color: #999;
+}
+.sell_info .product_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+}
+.sell_info .log_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.sell_info .log_info::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("../img/ico-login-more-on.svg") no-repeat center;
+  margin: 2px 0 0 8px;
+}
+
+/* my_link */
+.my_link {
+  background-color: #fff;
+  padding: 0 16px;
+  padding-bottom: 24px;
+}
+.my_link a {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+.my_link .point_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px;
+}
+.my_link .point_wrap .point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.my_link .point_wrap .point::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/ico-point.svg") no-repeat center;
+  margin-right: 4px;
+}
+.my_link .point_wrap .point::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("../img/btn-enter.svg") no-repeat center;
+  margin-left: 4px;
+}
+.my_link .flex {
+  margin-top: 8px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+.my_link .flex a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+.my_link .flex a::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.my_link .flex .store::before {
+  background: url("../img/ico-store-info.png") no-repeat center;
+}
+.my_link .flex .review::before {
+  background: url("../img/ico-review.png") no-repeat center;
+}
+
+/* list */
+.list {
+  font-size: 14px;
+  margin-top: 8px;
+  background-color: #fff;
+}
+.list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  cursor: pointer;
+}
+.list li a::after {
+  content: "";
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  background: url("../img/ico-my-more-on.svg") no-repeat center;
+}
+
+/* logout_btn */
+.logout_btn {
+  font-size: 12px;
+  line-height: 0.9;
+  color: #aaa;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #aaa;
+  margin: 20px 16px 22px 16px;
+}/*# sourceMappingURL=my.css.map */

@@ -1,0 +1,151 @@
+/* event_box */
+.event_box {
+	padding: 16px 16px 20px 16px;
+	background-color: #fff;
+
+	.event_wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 16px;
+
+		.event_label {
+			font-size: 12px;
+			margin-bottom: 4px;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.5;
+		}
+
+		.red {
+			color: #f53b3b;
+		}
+
+		&::after {
+			content: "";
+			width: 119px;
+			height: 78px;
+			display: inline-block;
+			background: url('../img/img-event-cash.png');
+		}
+	}
+
+	.my_bidding {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fff;
+		border-radius: 8px;
+		background-color: #f53b3b;
+		padding: 13px 16px;
+
+		span {
+			font-size: 14px;
+		}
+
+		strong {
+			font-size: 18px;
+			font-weight: bold;
+
+			&::before {
+				content: "";
+				width: 16px;
+				height: 12px;
+				display: inline-block;
+				background: url('../img/ico-ticket2.svg') no-repeat center;
+				margin-right: 4px;
+			}
+		}
+	}
+}
+
+/* charging_box */
+.charging_box {
+	padding: 20px 16px;
+
+	h3 {
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 16px;
+	}
+
+	ul {
+		li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border: 1px solid #fff;
+			border-radius: 8px;
+			background-color: #fff;
+			padding: 15px;
+			cursor: pointer;
+
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+
+			&.active {
+				border: 1px solid #f53b3b;
+			}
+
+			.charging_left {
+				div {
+					font-size: 16px;
+					font-weight: bold;
+					margin-bottom: 13px;
+
+					&::before {
+						content: "";
+						display: inline-block;
+						width: 16px;
+						height: 12px;
+						background: url('../img/ico-ticket.svg') no-repeat center;
+						margin-right: 4px;
+					}
+
+					span {
+						font-size: 14px;
+						font-weight: normal;
+						color: #f53b3b;
+						margin-left: 8px;
+					}
+				}
+
+				.chance {
+					font-size: 12px;
+					color: #f53b3b;
+					border-radius: 5px;
+					background-color: #fee;
+					padding: 5px 6px;
+				}
+			}
+
+			.charging_right {
+				font-size: 12px;
+
+				span {
+					font-size: 16px;
+					font-weight: bold;
+					margin-right: 2px;
+				}
+			}
+		}
+	}
+}
+
+/* graph */
+.graph {
+	height: 201px;
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+
+	h3 {
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+}

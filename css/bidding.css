@@ -1,0 +1,112 @@
+.total {
+  font-size: 14px;
+}
+.total span {
+  color: #f53b3b;
+}
+
+/* btn_wrap */
+.btn_wrap {
+  margin: 16px 0 20px;
+}
+.btn_wrap button {
+  border-radius: 14px;
+  background-color: #fff;
+  padding: 4px 12px;
+}
+.btn_wrap button:not(:last-child) {
+  margin-right: 4px;
+}
+.btn_wrap button::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/ico-drop-down.svg") no-repeat center;
+  margin-left: 8px;
+}
+
+/* box */
+.box {
+  padding: 12px;
+}
+.box:not(:last-child) {
+  margin-bottom: 12px;
+}
+.box .product_info_wrap .product_name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.box .product_info_wrap .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: 300;
+  color: #999;
+}
+.box .product_info_wrap .company .title {
+  min-width: 45px;
+  color: #000;
+  margin-right: 8px;
+}
+.box .info {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+}
+.box .info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: right;
+}
+.box .info li:not(:last-child) {
+  margin-bottom: 4px;
+}
+.box .info li div {
+  text-align: left;
+  font-weight: normal;
+  white-space: nowrap;
+  color: #000;
+  margin-right: 16px;
+}
+.box .info li .price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.box .info li .price span {
+  color: #f53b3b;
+}
+.box .tell {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border-radius: 24px;
+  background-color: #f53b3b;
+  padding: 8px 0;
+  margin-top: 19px;
+}
+.box .tell::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: url("../img/ico-tel.svg") no-repeat center;
+  margin-right: 12px;
+}
+.box .tell:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+/* pop */
+.radio_wrapper {
+  padding: 0 4px;
+}/*# sourceMappingURL=bidding.css.map */

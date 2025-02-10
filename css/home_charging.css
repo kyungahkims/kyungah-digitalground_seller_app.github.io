@@ -1,0 +1,145 @@
+/* event_box */
+.event_box {
+  padding: 16px 16px 20px 16px;
+  background-color: #fff;
+}
+.event_box .event_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.event_box .event_wrap .event_label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.event_box .event_wrap p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.event_box .event_wrap .red {
+  color: #f53b3b;
+}
+.event_box .event_wrap::after {
+  content: "";
+  width: 119px;
+  height: 78px;
+  display: inline-block;
+  background: url("../img/img-event-cash.png");
+}
+.event_box .my_bidding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #f53b3b;
+  padding: 13px 16px;
+}
+.event_box .my_bidding span {
+  font-size: 14px;
+}
+.event_box .my_bidding strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+.event_box .my_bidding strong::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  background: url("../img/ico-ticket2.svg") no-repeat center;
+  margin-right: 4px;
+}
+
+/* charging_box */
+.charging_box {
+  padding: 20px 16px;
+}
+.charging_box h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.charging_box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  cursor: pointer;
+}
+.charging_box ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.charging_box ul li.active {
+  border: 1px solid #f53b3b;
+}
+.charging_box ul li .charging_left div {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+.charging_box ul li .charging_left div::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background: url("../img/ico-ticket.svg") no-repeat center;
+  margin-right: 4px;
+}
+.charging_box ul li .charging_left div span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #f53b3b;
+  margin-left: 8px;
+}
+.charging_box ul li .charging_left .chance {
+  font-size: 12px;
+  color: #f53b3b;
+  border-radius: 5px;
+  background-color: #fee;
+  padding: 5px 6px;
+}
+.charging_box ul li .charging_right {
+  font-size: 12px;
+}
+.charging_box ul li .charging_right span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+/* graph */
+.graph {
+  height: 201px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.graph h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=home_charging.css.map */

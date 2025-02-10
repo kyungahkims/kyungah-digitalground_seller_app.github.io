@@ -1,0 +1,190 @@
+.box {
+	padding: 12px;
+
+	&:not(:last-child) {
+		margin-bottom: 12px;
+	}
+
+	/* total_wrap */
+	&.total_wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+
+		&>div {
+			display: flex;
+			align-items: center;
+
+			.title {
+				font-size: 14px;
+				color: #555;
+			}
+
+			strong {
+				font-size: 18px;
+				color: #000;
+				margin-left: 12px;
+			}
+		}
+
+		button {
+			font-size: 12px;
+			border-radius: 8px;
+			background-color: #f4f4f4;
+			padding: 7px 12px;
+		}
+	}
+
+	&.mb {
+		margin-bottom: 20px;
+	}
+
+	&.box2 {
+		padding: 16px 16px 13px 16px;
+	}
+
+	/* product_wrap */
+	.product_wrap {
+		display: flex;
+
+		.product_img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 92px;
+			height: 92px;
+			border-radius: 8px;
+			background-color: #f4f4f4;
+			margin-right: 12px;
+
+			img {
+				max-width: 62px;
+				max-height: 62px;
+			}
+		}
+
+		.product_info {
+			flex: 1;
+
+			li {
+				display: flex;
+				justify-content: space-between;
+				font-size: 12px;
+				font-weight: 300;
+				text-align: right;
+				color: #999;
+
+				&.product_name {
+					font-size: 14px;
+					font-weight: bold;
+					color: #202020;
+					margin: 2px 0 8px;
+				}
+
+				&.big {
+					margin-top: 4px;
+
+					.name {
+						font-size: 14px;
+						font-weight: normal;
+					}
+
+					.price {
+						font-size: 14px;
+						font-weight: bold;
+						color: #000;
+
+						&.red {
+							color: #f53b3b;
+						}
+					}
+				}
+
+				.name {
+					color: #000;
+					margin-right: 8px;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+
+	/* btn_wrap */
+	.btn_wrap {
+		display: flex;
+		column-gap: 8px;
+		margin-top: 16px;
+
+		button {
+			width: 100%;
+			height: 36px;
+			font-size: 14px;
+			color: #888;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			background-color: #fff;
+
+			&.bidding_btn {
+				color: #f53b3b;
+				border: none;
+				background-color: #ffe8e8;
+
+				&.active {
+					color: #fff;
+					background-color: #f53b3b;
+
+					&::before {
+						content: "";
+						display: inline-block;
+						width: 12px;
+						height: 12px;
+						background: url('../img/ico-auto.svg') no-repeat center;
+						margin-right: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* price_wrap */
+.price_wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 9px;
+
+	span {
+		min-width: 65px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	strong {
+		font-size: 16px;
+	}
+}
+
+/* info */
+.info {
+	font-size: 12px;
+	font-weight: 300;
+	color: #999;
+
+	li {
+		display: flex;
+		justify-content: space-between;
+		text-align: right;
+
+		&:not(:last-child) {
+			margin-bottom: 4px;
+		}
+
+		span {
+			color: #000;
+			white-space: nowrap;
+			margin-right: 10px;
+		}
+	}
+}
