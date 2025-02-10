@@ -48,10 +48,15 @@
   font-weight: bold;
 }
 .box .input_group .input_line {
-  max-width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   color: #202020;
-  padding: 4px 8px;
+  padding: 0 8px;
   margin-bottom: 0;
   border-radius: 4px;
   border: 1px solid #ddd;
@@ -59,6 +64,7 @@
 }
 .box .input_group input {
   width: auto;
+  max-width: 129px;
   text-align: right;
   color: #202020;
   padding: 4px 0;
@@ -150,18 +156,24 @@
   color: #888;
 }
 .box2 .box_form > ul li .s_box {
-  max-width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
   font-weight: 500;
   color: #202020;
   border-radius: 4px;
   background-color: #f3f3f3;
-  padding: 5px 8px;
-  margin-bottom: 0;
+  padding: 0 8px;
+  margin: 0 5px 0 0;
   white-space: nowrap;
 }
 .box2 .box_form > ul li .s_box input {
   width: auto;
-  max-width: 128px;
+  max-width: 129px;
   font-weight: 500;
   text-align: right;
   color: #202020;
