@@ -124,9 +124,6 @@ body {
 
 /* wrap */
 .wrap {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	position: relative;
 	max-width: 460px;
 	min-width: 280px;
@@ -160,15 +157,15 @@ header {
 
 /* wrapper */
 .wrapper {
-	flex: 1;
-	overflow-y: auto;
+	height: 100%;
 	background-color: #f7f7f7;
 	padding: 20px 16px;
-	padding-bottom: 70px;
+	padding-bottom: 158px;
+	overflow-y: auto;
 
 	&.wrapper2 {
 		padding: 0;
-		padding-bottom: 70px;
+		padding-bottom: 158px;
 
 	}
 }
