@@ -166,10 +166,6 @@ body {
   height: 100vh;
   margin: auto;
   background-color: #f4f4f4;
-  padding-bottom: 56px;
-}
-.wrap.active {
-  background-color: #fff;
 }
 
 /* header */
@@ -205,9 +201,11 @@ header button {
   overflow-y: auto;
   background-color: #f7f7f7;
   padding: 20px 16px;
+  padding-bottom: 70px;
 }
 .wrapper.wrapper2 {
   padding: 0;
+  padding-bottom: 70px;
 }
 
 /* nav */
@@ -218,8 +216,6 @@ nav {
   max-width: 460px;
   width: 100%;
   background-color: #fff;
-}
-nav.active {
   -webkit-box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
           box-shadow: inset 3px 12px 15px -10px rgba(0, 0, 0, 0.08);
 }
