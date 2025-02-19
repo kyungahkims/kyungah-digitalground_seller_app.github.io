@@ -25,7 +25,7 @@ $('.modal_wrap').click(function () {
 	$('.modal_wrap, .modal_wrap2, .modal_wrap3').css('display', 'none');
 });
 
-$('.pop, .modal').click(function (e) {
+$('.pop, .modal, .select_wrap .select, .search').click(function (e) {
 	e.stopPropagation();
 });
 
@@ -53,19 +53,6 @@ $('.dispath').click(function () {
 	$('.modal_wrap').css('display', 'flex');
 });
 
-/* 날짜 선택 라이브러리 */
-/* $('#dateInput, #dateInput2').daterangepicker({
-	singleDatePicker: true,
-	alwaysShowCalendars: true,
-	showCustomRangeLabel: false,
-	autoApply: true,
-	locale: {
-		format: 'YYYY-MM-DD',
-		daysOfWeek: ['일', '월', '화', '수', '목', '금', '토'],
-		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-	}
-}); */
-
 /* resize */
 $(document).ready(function () {
 	let vh = window.innerHeight * 0.01;
@@ -75,4 +62,49 @@ $(document).ready(function () {
 		let vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	});
+});
+
+/* select */
+$('.select_wrap .select').click(function () {
+	if (!$(this).hasClass('active')) {
+		$('.select_box').stop().slideUp('500');
+		$('.select_wrap .select, .select_wrap .select img').removeClass('active');
+		$(this).toggleClass('active');
+		$(this).find('img').toggleClass('active');
+		$(this).siblings('.select_box').stop().slideToggle('500');
+	} else {
+		$(this).toggleClass('active');
+		$(this).find('img').toggleClass('active');
+		$(this).siblings('.select_box').stop().slideToggle('500');
+	}
+});
+
+$('.select_box li').click(function () {
+	let selectedText = $(this).text();
+	let parentWrap = $(this).closest('.select_wrap');
+	let selectElement = parentWrap.find('.select');
+
+	if (selectElement.is('input')) {
+		if ($(this).hasClass('no_sel')) {
+			selectElement.val('').attr('placeholder', selectedText);
+		} else {
+			selectElement.val(selectedText);
+		}
+	} else {
+		selectElement.html(`${selectedText} <img src="../img/ico-drop-down.svg" alt="열고닫기">`);
+	}
+
+	$('.select_box').stop().slideUp('500');
+	selectElement.removeClass('active');
+
+	if ($(this).hasClass('no_sel')) {
+		selectElement.css('color', '#999');
+	} else {
+		selectElement.css('color', '#000');
+	}
+});
+
+$('.wrap').click(function () {
+	$('.select_wrap .select, .select_wrap .select img').removeClass('active');
+	$('.select_box').stop().slideUp('500');
 });

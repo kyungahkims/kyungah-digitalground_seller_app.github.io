@@ -1,0 +1,100 @@
+.wrapper2 {
+	border: 1px solid red;
+}
+
+.box {
+	padding: 22px 16px 20px;
+}
+
+h3 {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 16px;
+
+	&::before {
+		content: "";
+		width: 16px;
+		height: 16px;
+		background: url('../img/ico-calculator.png') no-repeat center;
+		margin-right: 4px;
+	}
+}
+
+.notification_wrap {
+	li {
+
+		&:nth-child(1) {
+			border-bottom: 1px solid #f4f4f4;
+			;
+			padding-bottom: 16px;
+			margin-bottom: 16px;
+		}
+
+		.title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		span {
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 14px;
+			font-weight: 300;
+			color: #777;
+			margin-top: 6px;
+		}
+	}
+}
+
+
+/* switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 45px;
+	height: 28px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch .slider {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 54px;
+	background-color: #ddd;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.switch .slider:before {
+	position: absolute;
+	content: "";
+	bottom: 2px;
+	left: 3px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: all 0.4s;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.switch input:checked+.slider {
+	background-color: #f53b3b;
+}
+
+.switch input:checked+.slider:before {
+	transform: translateX(16px);
+}
