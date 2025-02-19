@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .box {
   padding: 12px;
   /* total_wrap */
@@ -259,7 +260,7 @@
   background-color: #f53b3b;
 }
 
-/* wrapper3 */
+/* 상품등록 */
 .wrapper3 {
   background-color: #fff;
 }
