@@ -53,6 +53,11 @@ $('.dispath').click(function () {
 	$('.modal_wrap').css('display', 'flex');
 });
 
+/* 히스토리 필터 버튼 */
+$('.filterwrap button').click(function () {
+	$('.modal_wrap').css('display', 'flex');
+});
+
 /* resize */
 $(document).ready(function () {
 	let vh = window.innerHeight * 0.01;
