@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/product.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<title>에이지큇</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div class="flex-c">
+				<a href="#" class="before_page" aria-label="이전 페이지로 돌아가기">
+					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+				</a>
+				<h2>상품등록</h2>
+			</div>
+			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+		</header><!-- header -->
+		<div class="wrapper wrapper3">
+			<h3>상품 카테고리<span> *</span></h3>
+			<div class="select_wrap">
+				<button type="button" class="select">카테코리 선택<img src="../img/ico-drop-down.svg" alt="열고닫기"></button>
+				<ul class="select_box">
+					<li>카테고리1</li>
+					<li>카테고리2</li>
+					<li>카테고리3</li>
+				</ul>
+			</div>
+			<hr>
+			<div class="select_wrap">
+				<h5>기종(OS)</h5>
+				<button type="button" class="select">OS 선택<img src="../img/ico-drop-down.svg" alt="열고닫기"></button>
+				<ul class="select_box">
+					<li class="no_sel">OS 선택</li>
+					<li>카테고리1</li>
+					<li>카테고리2</li>
+					<li>카테고리3</li>
+				</ul>
+			</div>
+			<div class="select_wrap">
+				<h5>휴대폰 선택</h5>
+				<button type="button" class="select">휴대폰 선택<img src="../img/ico-drop-down.svg" alt="열고닫기"></button>
+				<ul class="select_box">
+					<li class="no_sel">휴대폰 선택</li>
+					<li>카테고리1</li>
+					<li>카테고리2</li>
+					<li>카테고리3</li>
+				</ul>
+			</div>
+			<div class="select_wrap">
+				<h5>모델명/모델번호 선택</h5>
+				<button type="button" class="select">모델명/모델번호 선택<img src="../img/ico-drop-down.svg" alt="열고닫기"></button>
+				<ul class="select_box">
+					<li class="no_sel">모델명/모델번호 선택</li>
+					<li>카테고리1</li>
+					<li>카테고리2</li>
+					<li>카테고리3</li>
+				</ul>
+			</div>
+			<div class="select_wrap">
+				<h5>통신사 선택</h5>
+				<button type="button" class="select">통신사 선택<img src="../img/ico-drop-down.svg" alt="열고닫기"></button>
+				<ul class="select_box">
+					<li class="no_sel">통신사 선택</li>
+					<li>카테고리1</li>
+					<li>카테고리2</li>
+					<li>카테고리3</li>
+				</ul>
+			</div>
+			<hr>
+			<h5>상품 스펙</h5>
+			<div class="box">
+				<div class="product_wrap">
+					<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
+					<ul class="product_info">
+						<li class="product_name"><strong>아이폰15</strong></li>
+						<li><span class="name">모델번호</span>U132806471</li>
+						<li><span class="name">변경통신사</span>KT / 번호이동</li>
+						<li class="big"><span class="name">매장지원금</span><span class="price">450,000원</span></li>
+					</ul>
+				</div>
+				<hr>
+				<ul class="product_details">
+					<li>
+						<div>CPU</div>
+						<p>A16 Bionic칩</p>
+					</li>
+					<li>
+						<div>RAM</div>
+						<p>6GB</p>
+					</li>
+					<li>
+						<div>배터리</div>
+						<p>3349mAh</p>
+					</li>
+					<li>
+						<div>화면(인치)</div>
+						<p>6.1</p>
+					</li>
+					<li>
+						<div>크기(mm)</div>
+						<p>147.6X71.6X7.8</p>
+					</li>
+					<li>
+						<div>무게(g)</div>
+						<p>128</p>
+					</li>
+					<li>
+						<div>디스플레이</div>
+						<p>super retina</p>
+						<p>XDR</p>
+					</li>
+					<li>
+						<div>외장메모리</div>
+						<p>미지원</p>
+					</li>
+					<li>
+						<div>카메라(화소)</div>
+						<p>전면 1,200만</p>
+						<p>후면 4,800만</p>
+						<p>초광각 1,200만</p>
+					</li>
+				</ul>
+			</div>
+			<button type="button" class="registration_btn">상품 등록하기</button>
+		</div><!-- wrapper -->
+		<nav>
+			<ul>
+				<li><a href="#">홈</a></li>
+				<li><a href="#">견적요청</a></li>
+				<li><a href="#" class="active" aria-current="page">상품등록</a></li>
+				<li><a href="#">통계</a></li>
+				<li><a href="#">MY</a></li>
+			</ul>
+		</nav><!-- nav -->
+	</div><!-- wrap -->
+	<div class="modal_wrap">
+		<div class="modal">
+			<p>해당 삼품을 나의 상픔으로<br>
+				등록하시겠습니까?</p>
+			<div class="btn_wrap"><button type="button" class="red">네</button><button type="button">아니오</button></div>
+		</div>
+	</div><!-- modal_wrap -->
+
+	<script src="../js/common.js"></script>
+</body>
+
+</html>
