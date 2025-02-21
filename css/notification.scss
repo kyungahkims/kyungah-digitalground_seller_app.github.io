@@ -1,9 +1,14 @@
-.wrapper2 {
-	border: 1px solid red;
+.wrapper.wrapper2 {
+	padding-bottom: 138px;
 }
 
 .box {
+	border-radius: 0;
 	padding: 22px 16px 20px;
+
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
 }
 
 h3 {
@@ -17,32 +22,67 @@ h3 {
 		content: "";
 		width: 16px;
 		height: 16px;
-		background: url('../img/ico-calculator.png') no-repeat center;
 		margin-right: 4px;
+	}
+
+	&.calculator {
+		&::before {
+			background: url('../img/ico-calculator.png') no-repeat center;
+		}
+	}
+
+	&.shopbag {
+		&::before {
+			background: url('../img/ico-shopbag.png') no-repeat center;
+		}
+	}
+
+	&.bell {
+		&::before {
+			background: url('../img/ico-bell.png') no-repeat center;
+		}
 	}
 }
 
+/* notification_wrap */
 .notification_wrap {
 	li {
 
+		&:not(:first-child, :last-child) {
+			margin-bottom: 18px;
+		}
+
 		&:nth-child(1) {
 			border-bottom: 1px solid #f4f4f4;
-			;
 			padding-bottom: 16px;
 			margin-bottom: 16px;
 		}
 
-		.title {
+		/* inactive */
+		&.inactive {
+			.title {
+				color: #aaa;
+			}
+
+			.cont {
+				color: #aaa;
+			}
+		}
+
+		.title_wrap {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 		}
 
-		span {
+		.title {
+			position: relative;
+			display: flex;
+			align-items: center;
 			font-size: 16px;
 		}
 
-		p {
+		.cont {
 			font-size: 14px;
 			font-weight: 300;
 			color: #777;
@@ -51,6 +91,86 @@ h3 {
 	}
 }
 
+/* info */
+.info {
+
+	.info_btn {
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		margin-left: 8px;
+
+		&::after {
+			content: "";
+			width: 16px;
+			height: 16px;
+			background: url('../img/ico-question.svg') no-repeat center;
+			cursor: pointer;
+		}
+
+		&:hover+.info_box {
+			display: block;
+		}
+	}
+
+	.info_box {
+		position: absolute;
+		display: none;
+		top: 33px;
+		left: 0;
+		font-size: 14px;
+		font-weight: 300;
+		border-radius: 8px;
+		border: 1px solid #ddd;
+		background-color: #fff;
+		padding: 12px 30px 12px 12px;
+		z-index: 1000;
+		white-space: nowrap;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 100px;
+			top: -20px;
+			border-top: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-left: 10px solid #ddd;
+			transform: rotate(-90deg);
+		}
+
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 102px;
+			top: -16px;
+			border-top: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid transparent;
+			border-left: 8px solid #fff;
+			transform: rotate(-90deg);
+		}
+
+		p {
+			line-height: 1.29;
+		}
+
+		button {
+			position: absolute;
+			top: 12px;
+			right: 12px;
+			width: 15px;
+			height: 15px;
+			background-color: transparent;
+
+			img {
+				vertical-align: top;
+			}
+		}
+	}
+}
 
 /* switch */
 .switch {

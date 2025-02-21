@@ -357,6 +357,56 @@ nav {
 	}
 }
 
+/* modal */
+.modal_wrap {
+
+	.modal {
+		position: relative;
+		width: 256px;
+		text-align: center;
+		border-radius: 12px;
+		background-color: #fff;
+		overflow: hidden;
+
+		p {
+			font-size: 14px;
+			line-height: 1.43;
+			color: #000;
+			padding: 28px 10px;
+
+			.red {
+				font-weight: 500;
+				color: #f53b3b;
+			}
+		}
+
+		.small {
+			display: block;
+			font-size: 12px;
+			line-height: 1.33;
+			color: #f53b3b;
+			margin-top: 8px;
+		}
+
+		.btn_wrap {
+			display: flex;
+
+			button {
+				width: 100%;
+				font-size: 14px;
+				color: #777;
+				background-color: #e3e3e3;
+				padding: 12px;
+
+				&.red {
+					color: #fff;
+					background-color: #f53b3b;
+				}
+			}
+		}
+	}
+}
+
 /* hr */
 hr {
 	width: 100%;
@@ -620,4 +670,53 @@ hr {
 	border-radius: 8px;
 	background-color: #fff;
 	padding: 16px;
+}
+
+/* calendar_wrap */
+.calendar_wrap {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+
+	input {
+		width: 100%;
+		font-size: 14px;
+		color: #777;
+		border-radius: 20px;
+		background-color: #fff;
+		padding: 10px 32px 10px 16px;
+	}
+
+	.calendar {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 12px;
+			right: 16px;
+			width: 17px;
+			height: 17px;
+			background: url('../img/ico-calendar.svg') no-repeat center;
+		}
+	}
+
+	span::before {
+		content: "";
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background: url('../img/ico-tilde.svg') no-repeat center;
+		margin: 0 8px;
+	}
+}
+
+.ranges {
+	display: none;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker .ranges li.active {
+	background-color: #f53b3b !important;
 }

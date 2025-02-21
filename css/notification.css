@@ -1,9 +1,13 @@
-.wrapper2 {
-  border: 1px solid red;
+.wrapper.wrapper2 {
+  padding-bottom: 138px;
 }
 
 .box {
+  border-radius: 0;
   padding: 22px 16px 20px;
+}
+.box:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 h3 {
@@ -21,16 +25,37 @@ h3::before {
   content: "";
   width: 16px;
   height: 16px;
-  background: url("../img/ico-calculator.png") no-repeat center;
   margin-right: 4px;
 }
+h3.calculator::before {
+  background: url("../img/ico-calculator.png") no-repeat center;
+}
+h3.shopbag::before {
+  background: url("../img/ico-shopbag.png") no-repeat center;
+}
+h3.bell::before {
+  background: url("../img/ico-bell.png") no-repeat center;
+}
 
+/* notification_wrap */
+.notification_wrap li {
+  /* inactive */
+}
+.notification_wrap li:not(:first-child, :last-child) {
+  margin-bottom: 18px;
+}
 .notification_wrap li:nth-child(1) {
   border-bottom: 1px solid #f4f4f4;
   padding-bottom: 16px;
   margin-bottom: 16px;
 }
-.notification_wrap li .title {
+.notification_wrap li.inactive .title {
+  color: #aaa;
+}
+.notification_wrap li.inactive .cont {
+  color: #aaa;
+}
+.notification_wrap li .title_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,14 +66,97 @@ h3::before {
       -ms-flex-align: center;
           align-items: center;
 }
-.notification_wrap li span {
+.notification_wrap li .title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
 }
-.notification_wrap li p {
+.notification_wrap li .cont {
   font-size: 14px;
   font-weight: 300;
   color: #777;
   margin-top: 6px;
+}
+
+/* info */
+.info .info_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  margin-left: 8px;
+}
+.info .info_btn::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/ico-question.svg") no-repeat center;
+  cursor: pointer;
+}
+.info .info_btn:hover + .info_box {
+  display: block;
+}
+.info .info_box {
+  position: absolute;
+  display: none;
+  top: 33px;
+  left: 0;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 12px 30px 12px 12px;
+  z-index: 1000;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+.info .info_box::before {
+  content: "";
+  position: absolute;
+  left: 100px;
+  top: -20px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ddd;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.info .info_box::after {
+  content: "";
+  position: absolute;
+  left: 102px;
+  top: -16px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #fff;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.info .info_box p {
+  line-height: 1.29;
+}
+.info .info_box button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+}
+.info .info_box button img {
+  vertical-align: top;
 }
 
 /* switch */
