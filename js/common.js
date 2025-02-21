@@ -113,3 +113,15 @@ $('.wrap').click(function () {
 	$('.select_wrap .select, .select_wrap .select img').removeClass('active');
 	$('.select_box').stop().slideUp('500');
 });
+
+/* tab */
+$('.tab_wrap .tab').click(function () {
+	$('.tab_wrap .tab').removeClass('active');
+	$(this).addClass('active');
+});
+
+/* faq */
+$('.faq .question').click(function () {
+	$(this).siblings('.answer').stop().slideToggle('500');
+	$(this).find('img').stop().toggleClass('active');
+});
