@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/my.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<title>디아몰</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div class="flex-c">
+				<a href="#" class="before_page" aria-label="이전 페이지로 돌아가기">
+					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+				</a>
+				<h2>평점 관리</h2>
+			</div>
+			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+		</header><!-- header -->
+		<div class="wrapper wrapper2">
+			<div class="sell_info big">
+				<div class="product_img "><img src="../img/img-profile-06.png" alt="프로필 사진" class="img"></div>
+				<div>
+					<div class="product_name">휴대폰성지님</div>
+					<span class="num">A123456789<span>휴대폰</span></span>
+				</div>
+			</div>
+
+			<div class="search_wrap">
+				<div class="calendar_wrap">
+					<div class="calendar"><input type="text" id="dateInput" value=""></div>
+					<span></span>
+					<div class="calendar"><input type="text" id="dateInput2" value=""></div>
+				</div>
+				<div class="filter"><button type="button" aria-label="선택 필터 버튼">상품 ID</button> <input type="text"></div>
+				<button class="search_btn">검색하기</button>
+			</div>
+
+			<div class="review_wrap">
+				<div class="review_filter">
+					<div><span class="title">리뷰 목록 (총 <span class="total">4</span>개)</span> <span class="score">4.5</span></div>
+					<button type="button" class="filter_btn" aria-label="선택 필터 버튼">최신순</button>
+				</div>
+				<ul class="review_list">
+					<li>
+						<div class="review_info">
+							<div role="img" class="star_wrap" aria-label="별표 5개 만점에 4개를 받았습니다.">
+								<span class="star_on"></span>
+								<span class="star_on"></span>
+								<span class="star_on"></span>
+								<span class="star_on"></span>
+								<span class="star_off"></span>
+							</div>
+							<span class="date">25-01-01</span>
+							<span>cwna****</span>
+						</div>
+						<h5 class="title">갤럭시S25 울트라</h5>
+						<p class="cont">어머니 생일 선물로 갤럭시S25를 급하게 구매하였는데
+							전화 응대도 너무 친절하게 잘해주셔서 감사했습니다.
+							나중에 제 휴대폰도 구매하려구요 ^^</p>
+					</li>
+					<li>
+						<div class="review_info">
+							<div role="img" class="star_wrap" aria-label="별표 5개 만점에 4개를 받았습니다.">
+								<span class="star_on"></span>
+								<span class="star_on"></span>
+								<span class="star_on"></span>
+								<span class="star_on"></span>
+								<span class="star_off"></span>
+							</div>
+							<span class="date">25-01-01</span>
+							<span>cwna****</span>
+						</div>
+						<h5 class="title">갤럭시S25 울트라</h5>
+						<p class="cont">어머니 생일 선물로 갤럭시S25를 급하게 구매하였는데
+							전화 응대도 너무 친절하게 잘해주셔서 감사했습니다.
+							나중에 제 휴대폰도 구매하려구요 ^^</p>
+					</li>
+				</ul>
+			</div>
+		</div><!-- wrapper -->
+		<nav>
+			<ul>
+				<li><a href="#">홈</a></li>
+				<li><a href="#">견적요청</a></li>
+				<li><a href="#">상품등록</a></li>
+				<li><a href="#">통계</a></li>
+				<li><a href="#" class="active" aria-current="page">MY</a></li>
+			</ul>
+		</nav><!-- nav -->
+	</div><!-- wrap -->
+	<div class="modal_wrap" style="display: flex;">
+		<div class="pop">
+			<h3>상품 검색</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio1" name="sorting" checked>
+					<label for="radio1">상품 ID</label>
+				</span>
+				<span>
+					<input type="radio" id="radio2" name="sorting">
+					<label for="radio2">상품명</label>
+				</span>
+			</div>
+			<button type="button" class="sel_btn">선택완료</button>
+		</div>
+	</div><!-- modal_wrap -->
+	<div class="modal_wrap">
+		<div class="pop">
+			<h3>상품 검색</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio3" name="sorting2" checked>
+					<label for="radio3">최신순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio4" name="sorting2">
+					<label for="radio4">평점순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio5" name="sorting2">
+					<label for="radio5">가다나순</label>
+				</span>
+			</div>
+			<button type="button" class="sel_btn">선택완료</button>
+		</div>
+	</div><!-- modal_wrap -->
+	<script src="../js/common.js"></script>
+	<script>
+		/* 날짜 선택 라이브러리 */
+		$('#dateInput, #dateInput2').daterangepicker({
+			singleDatePicker: true,
+			alwaysShowCalendars: true,
+			showCustomRangeLabel: false,
+			autoApply: true,
+			locale: {
+				format: 'YYYY-MM-DD',
+				daysOfWeek: ['일', '월', '화', '수', '목', '금', '토'],
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			}
+		});
+	</script>
+</body>
+
+</html>
