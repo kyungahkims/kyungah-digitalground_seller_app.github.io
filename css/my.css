@@ -247,6 +247,7 @@
   color: #202020;
 }
 .store_info ul li input {
+  width: 100%;
   font-size: 14px;
   border-radius: 8px;
   border: 1px solid #eee;

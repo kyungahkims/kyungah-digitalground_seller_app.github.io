@@ -94,6 +94,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  text-align: left;
   overflow: hidden;
 }
 .faq .question img {
