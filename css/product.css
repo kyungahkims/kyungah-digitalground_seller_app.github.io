@@ -354,11 +354,4 @@
 .wrapper3 .registration_btn:disabled {
   color: #777;
   background-color: #e3e3e3;
-}
-
-/* modal_wrap */
-.modal_wrap {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }/*# sourceMappingURL=product.css.map */

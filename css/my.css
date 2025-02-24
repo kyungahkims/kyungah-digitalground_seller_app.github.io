@@ -242,7 +242,8 @@
 .store_info ul li.mb {
   margin-bottom: 8px;
 }
-.store_info ul li span, .store_info ul li label {
+.store_info ul li span,
+.store_info ul li label {
   min-width: 100px;
   color: #202020;
 }
@@ -464,13 +465,6 @@
   border-radius: 24px;
   background-color: #f53b3b;
   margin-top: 11px;
-}
-
-/* modal_wrap */
-.modal_wrap {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .pop h3 {

@@ -243,7 +243,8 @@
 				margin-bottom: 8px;
 			}
 
-			span, label {
+			span,
+			label {
 				min-width: 100px;
 				color: #202020;
 			}
@@ -460,11 +461,6 @@
 	border-radius: 24px;
 	background-color: #f53b3b;
 	margin-top: 11px;
-}
-
-/* modal_wrap */
-.modal_wrap {
-	align-items: center;
 }
 
 .pop {

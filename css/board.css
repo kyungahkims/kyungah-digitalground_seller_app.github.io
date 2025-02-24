@@ -18,11 +18,12 @@
   border-bottom: 1px solid #f4f4f4;
   background-color: #fff;
   padding: 20px;
+  cursor: default;
 }
 .notice_wrap li.notice_cont {
-  padding-top: 112px;
   font-size: 14px;
   line-height: 1.43;
+  cursor: default;
 }
 .notice_wrap li.notice_cont img {
   display: block;

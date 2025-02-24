@@ -16,12 +16,8 @@ $('.menu_wrap li').click(function () {
 	$(this).addClass('active');
 });
 
-/* 모달 닫기 */
-$('.sel_btn, .btn_wrap button').click(function () {
-	$('.modal_wrap, .modal_wrap2').css('display', 'none');
-});
-
-$('.modal_wrap').click(function () {
+/* modal 닫기 */
+$('.sel_btn, .btn_wrap button, .modal_wrap, .modal_wrap2').click(function () {
 	$('.modal_wrap, .modal_wrap2, .modal_wrap3').css('display', 'none');
 });
 
@@ -29,13 +25,13 @@ $('.pop, .modal, .select_wrap .select, .search').click(function (e) {
 	e.stopPropagation();
 });
 
-/* 기종 선택 */
-$('.filter_btn').click(function () {
+/* modal_wrap 열기 */
+$('.filter_btn, .dispath, .filterwrap button, .withdrawal_btn').click(function () {
 	$('.modal_wrap').css('display', 'flex');
 });
 
-/* 판매상품 선택 */
-$('.change_btn').click(function () {
+/* modal_wrap2 열기 */
+$('.change_btn, .product_btn').click(function () {
 	$('.modal_wrap2').css('display', 'flex');
 });
 
@@ -46,16 +42,6 @@ $('.send_btn').click(function () {
 	setTimeout(function () {
 		$('.modal_wrap3').css('display', 'none');
 	}, 2000);
-});
-
-/* 견적발송 버튼 */
-$('.dispath').click(function () {
-	$('.modal_wrap').css('display', 'flex');
-});
-
-/* 히스토리 필터 버튼 */
-$('.filterwrap button').click(function () {
-	$('.modal_wrap').css('display', 'flex');
 });
 
 /* resize */
@@ -114,7 +100,7 @@ $('.wrap').click(function () {
 	$('.select_box').stop().slideUp('500');
 });
 
-/* tab */
+/* faq tab */
 $('.tab_wrap .tab').click(function () {
 	$('.tab_wrap .tab').removeClass('active');
 	$(this).addClass('active');
@@ -125,3 +111,14 @@ $('.faq .question').click(function () {
 	$(this).siblings('.answer').stop().slideToggle('500');
 	$(this).find('img').stop().toggleClass('active');
 });
+
+$('.info_box button').click(function () {
+	$('.info_box').css('display', 'none');
+});
+
+/* 공지사항 상세 타이틀 높이 값 */
+function onResize() {
+	$(".notice_cont").css("padding-top", $(".notice_sel").outerHeight() + 20 + "px");
+}
+
+$(window).resize(onResize).trigger("resize");

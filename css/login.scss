@@ -74,7 +74,8 @@
 		}
 
 		.error_box {
-			visibility: hidden;
+			visibility: visible;
+			/* visibility: hidden; */
 			font-size: 12px;
 			line-height: 1.5;
 			color: #f53b3b;
