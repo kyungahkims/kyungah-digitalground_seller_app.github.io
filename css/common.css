@@ -414,7 +414,7 @@ nav ul li:nth-child(5) a.active::before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 4px;
-  min-height: 28px;
+  min-height: 66px;
 }
 .modal_wrap .pop .result_wrap button,
 .modal_wrap2 .pop .result_wrap button,
@@ -445,7 +445,7 @@ nav ul li:nth-child(5) a.active::before {
 .modal_wrap .pop hr,
 .modal_wrap2 .pop hr,
 .modal_wrap3 .pop hr {
-  margin: 28px 0;
+  margin: 18px 0;
 }
 
 /* modal */
@@ -512,9 +512,6 @@ hr {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.sel_btn.sel_btn2 {
-  margin-top: 78px;
-}
 .sel_btn:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
@@ -574,7 +571,7 @@ hr {
   font-size: 14px;
 }
 .radio_wrap.radio_wrap1 {
-  gap: 10%;
+  gap: 6%;
   row-gap: 5px;
 }
 .radio_wrap.radio_wrap1 input[type=radio] {

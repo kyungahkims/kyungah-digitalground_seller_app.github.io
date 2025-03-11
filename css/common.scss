@@ -349,7 +349,7 @@ nav {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 4px;
-			min-height: 28px;
+			min-height: 66px;
 
 			button {
 				height: 28px;
@@ -376,7 +376,7 @@ nav {
 		}
 
 		hr {
-			margin: 28px 0;
+			margin: 18px 0;
 		}
 	}
 }
@@ -451,10 +451,6 @@ hr {
 	margin-top: 40px;
 	transition: all 0.3s;
 
-	&.sel_btn2 {
-		margin-top: 78px;
-	}
-
 	&:hover {
 		filter: brightness(1.1);
 	}
@@ -513,7 +509,7 @@ hr {
 	}
 
 	&.radio_wrap1 {
-		gap: 10%;
+		gap: 6%;
 		row-gap: 5px;
 
 		input[type="radio"] {
