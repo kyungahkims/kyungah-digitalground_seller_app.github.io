@@ -122,3 +122,13 @@ function onResize() {
 }
 
 $(window).resize(onResize).trigger("resize");
+
+
+/* 검색 */
+$('.pop').click(function () {
+	$('.search_list').stop().slideUp('500');
+});
+
+$('.modal_wrap .search').click(function () {
+	$('.search_list').stop().slideDown('500');
+});
