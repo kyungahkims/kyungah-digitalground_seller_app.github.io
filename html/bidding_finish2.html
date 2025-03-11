@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 	<script src="../js/jquery-3.5.1.min.js"></script>
-	<title>에이지큇</title>
+	<title>디아몰</title>
 </head>
 
 <body>
@@ -132,69 +132,54 @@
 		</nav><!-- nav -->
 	</div><!-- wrap -->
 
-	<div class="modal_wrap" style="display: flex;">
+	<div class="modal_wrap">
 		<div class="pop">
-			<div class="radio_wrapper">
-				<h3>기종<span>(복수선택 가능)</span></h3>
-				<div class="check_wrap">
-					<span>
-						<input type="checkbox" id="checkbox1">
-						<label for="checkbox1">애플</label>
-					</span>
-					<span>
-						<input type="checkbox" id="checkbox2">
-						<label for="checkbox2">삼성</label>
-					</span>
-					<span>
-						<input type="checkbox" id="checkbox3">
-						<label for="checkbox3">기타</label>
-					</span>
-				</div>
-				<div class="search">
-					<input type="text" placeholder="">
-					<button type="button" aria-label="검색 버튼"><img src="../img/ico-search.png" alt="검색"></button>
-				</div>
-				<div class="result_wrap">
-					<button type="button" aria-label="검색 결과 삭제 버튼">애플</button>
-					<button type="button" aria-label="검색 결과 삭제 버튼">아이폰15</button>
-					<button type="button" aria-label="검색 결과 삭제 버튼">아이폰14</button>
-				</div>
-				<hr>
-				<h3>정렬순서</h3>
-				<div class="radio_wrapper">
-					<div class="radio_wrap radio_wrap1">
-						<span>
-							<input type="radio" id="radio1" name="sorting" checked>
-							<label for="radio1">최신순</label>
-						</span>
-						<span>
-							<input type="radio" id="radio2" name="sorting">
-							<label for="radio2">견적적은순</label>
-						</span>
-						<span>
-							<input type="radio" id="radio3" name="sorting">
-							<label for="radio3">마감임박순</label>
-						</span>
-					</div>
-					<hr>
-					<h3>가입분류<span>(복수선택 가능)</span></h3>
-					<div class="check_wrap check_wrap2">
-						<span>
-							<input type="checkbox" id="checkbox4">
-							<label for="checkbox4">번호이동</label>
-						</span>
-						<span>
-							<input type="checkbox" id="checkbox5">
-							<label for="checkbox5">기기변경</label>
-						</span>
-						<span>
-							<input type="checkbox" id="checkbox6">
-							<label for="checkbox6">신규가입</label>
-						</span>
-					</div>
-				</div>
+			<h3>정렬순서</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio1" name="sorting" checked>
+					<label for="radio1">최신순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio2" name="sorting">
+					<label for="radio2">견적적은순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio3" name="sorting">
+					<label for="radio3">마감임박순</label>
+				</span>
 			</div>
-			<button type="button" class="sel_btn">선택완료</button>
+			<hr>
+			<h3>순위별 정력</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio4" name="sorting2" checked>
+					<label for="radio4">높은순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio5" name="sorting2">
+					<label for="radio5">낮은순</label>
+				</span>
+			</div>
+			<hr>
+			<h3>제품명 검색</h3>
+			<div class="search">
+				<input type="text" placeholder="">
+				<button type="button" aria-label="검색 버튼"><img src="../img/ico-search.png" alt="검색"></button>
+				<ul class="search_list">
+					<li><span>아이폰15</span></li>
+					<li><span>아이폰 15</span>, 126GB</li>
+					<li><span>아이폰 15</span>, 256GB</li>
+					<li><span>아이폰 15</span>, 256GB</li>
+					<li><span>아이폰 15</span>, 256GB</li>
+				</ul>
+			</div>
+			<div class="result_wrap">
+				<button type="button" aria-label="검색 결과 삭제 버튼">애플</button>
+				<button type="button" aria-label="검색 결과 삭제 버튼">아이폰15</button>
+				<button type="button" aria-label="검색 결과 삭제 버튼">아이폰14</button>
+			</div>
+			<button type="button" class="sel_btn sel_btn2">선택완료</button>
 		</div>
 	</div><!-- modal_wrap -->
 
