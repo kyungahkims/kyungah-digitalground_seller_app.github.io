@@ -294,15 +294,16 @@ nav {
 		.search {
 			position: relative;
 			width: 100%;
-			margin: 25px 16px 12px 0;
+			margin: 0 16px 8px 0;
 
 			input {
 				width: 100%;
 				height: 32px;
-				font-size: 14px;
-				border-radius: 23px;
+				font-size: 12px;
+				border-radius: 8px;
 				border: 1px solid #ddd;
 				padding: 0 32px 0 12px;
+				color: #555;
 
 				&::placeholder {
 					color: #bbb;
@@ -315,12 +316,40 @@ nav {
 				right: 12px;
 				background-color: transparent;
 			}
+
+			.search_list {
+				display: none;
+				position: absolute;
+				top: 40px;
+				width: 100%;
+				height: 98px;
+				font-size: 12px;
+				border-radius: 8px;
+				border: 1px solid #ddd;
+				background-color: #fff;
+				overflow-y: auto;
+
+				li {
+					color: #555;
+					padding: 7px 12px;
+					cursor: pointer;
+
+					&:not(:last-child) {
+						border-bottom: 1px solid #f3f3f3;
+					}
+
+					span {
+						color: #0076ff;
+					}
+				}
+			}
 		}
 
 		.result_wrap {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 4px;
+			min-height: 28px;
 
 			button {
 				height: 28px;
@@ -422,6 +451,10 @@ hr {
 	margin-top: 40px;
 	transition: all 0.3s;
 
+	&.sel_btn2 {
+		margin-top: 78px;
+	}
+
 	&:hover {
 		filter: brightness(1.1);
 	}
@@ -491,7 +524,7 @@ hr {
 			appearance: none;
 			border: 1px solid #ddd;
 			border-radius: 50%;
-			margin-right: 8px;
+
 		}
 
 		input[type="radio"]:checked {
@@ -512,6 +545,10 @@ hr {
 
 		input[type="radio"]:checked::before {
 			display: block;
+		}
+
+		label {
+			padding-left: 8px;
 		}
 	}
 

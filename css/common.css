@@ -336,17 +336,18 @@ nav ul li:nth-child(5) a.active::before {
 .modal_wrap3 .pop .search {
   position: relative;
   width: 100%;
-  margin: 25px 16px 12px 0;
+  margin: 0 16px 8px 0;
 }
 .modal_wrap .pop .search input,
 .modal_wrap2 .pop .search input,
 .modal_wrap3 .pop .search input {
   width: 100%;
   height: 32px;
-  font-size: 14px;
-  border-radius: 23px;
+  font-size: 12px;
+  border-radius: 8px;
   border: 1px solid #ddd;
   padding: 0 32px 0 12px;
+  color: #555;
 }
 .modal_wrap .pop .search input::-webkit-input-placeholder, .modal_wrap2 .pop .search input::-webkit-input-placeholder, .modal_wrap3 .pop .search input::-webkit-input-placeholder {
   color: #bbb;
@@ -373,6 +374,37 @@ nav ul li:nth-child(5) a.active::before {
   right: 12px;
   background-color: transparent;
 }
+.modal_wrap .pop .search .search_list,
+.modal_wrap2 .pop .search .search_list,
+.modal_wrap3 .pop .search .search_list {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 98px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.modal_wrap .pop .search .search_list li,
+.modal_wrap2 .pop .search .search_list li,
+.modal_wrap3 .pop .search .search_list li {
+  color: #555;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.modal_wrap .pop .search .search_list li:not(:last-child),
+.modal_wrap2 .pop .search .search_list li:not(:last-child),
+.modal_wrap3 .pop .search .search_list li:not(:last-child) {
+  border-bottom: 1px solid #f3f3f3;
+}
+.modal_wrap .pop .search .search_list li span,
+.modal_wrap2 .pop .search .search_list li span,
+.modal_wrap3 .pop .search .search_list li span {
+  color: #0076ff;
+}
 .modal_wrap .pop .result_wrap,
 .modal_wrap2 .pop .result_wrap,
 .modal_wrap3 .pop .result_wrap {
@@ -382,6 +414,7 @@ nav ul li:nth-child(5) a.active::before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 4px;
+  min-height: 28px;
 }
 .modal_wrap .pop .result_wrap button,
 .modal_wrap2 .pop .result_wrap button,
@@ -479,6 +512,9 @@ hr {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+.sel_btn.sel_btn2 {
+  margin-top: 78px;
+}
 .sel_btn:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
@@ -551,7 +587,6 @@ hr {
           appearance: none;
   border: 1px solid #ddd;
   border-radius: 50%;
-  margin-right: 8px;
 }
 .radio_wrap.radio_wrap1 input[type=radio]:checked {
   border-color: #f53b3b;
@@ -569,6 +604,9 @@ hr {
 }
 .radio_wrap.radio_wrap1 input[type=radio]:checked::before {
   display: block;
+}
+.radio_wrap.radio_wrap1 label {
+  padding-left: 8px;
 }
 .radio_wrap.radio_wrap4 {
   gap: 8px;

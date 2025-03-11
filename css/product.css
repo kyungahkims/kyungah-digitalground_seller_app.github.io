@@ -354,4 +354,11 @@
 .wrapper3 .registration_btn:disabled {
   color: #777;
   background-color: #e3e3e3;
+}
+
+.radio_wrap.radio_wrap1 {
+  row-gap: 16px;
+}
+.radio_wrap.radio_wrap1 span {
+  width: 100%;
 }/*# sourceMappingURL=product.css.map */
