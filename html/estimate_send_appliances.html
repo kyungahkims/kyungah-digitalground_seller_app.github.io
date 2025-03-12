@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/estimate_send.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<title>디아몰</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div class="flex-c">
+				<a href="#" class="before_page" aria-label="이전 페이지로 돌아가기">
+					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+				</a>
+				<h2>견적 보내기</h2>
+			</div>
+			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+		</header><!-- header -->
+		<div class="wrapper">
+			<div class="sell_info">
+				<div class="product_img"><img src="../img/img-profile-01.png" alt="구매자 프로필" class="img"></div>
+				<div>
+					<div class="num">장기동</div>
+					<div class="product_name">신념있는 스파게티</div>
+				</div>
+			</div><!-- sell_info -->
+			<div class="box box_p">
+				<ul class="input_group">
+					<li class="name_price">월 렌탈료 <span>(36개월 할부)</span></li>
+					<li class="name">월 43,000 원</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3>서비스 입력</h3>
+				<textarea class="mini">안내 사항
+
+롯데카드 사용 시 월 렌탈료 15,000원 할인 가능합니다.
+(36개월 이상 사용시 조건 하에 할인 가능) 
+					
+할부기간 48개월로 증가시 매장 혜택 추가 프로모션으로 월 2,000원 추가 감가 가능합니다.</textarea>
+			</div><!-- box -->
+
+			<div class="box box2">
+				<h4 class="box_header">고객 요청 사항</h4>
+				<div class="box_form">
+					<ul>
+						<li>제품명</li>
+						<li>코웨이 아이콘1 정수기</li>
+					</ul>
+					<ul>
+						<li>디아몰 예상 렌탈료</li>
+						<li>월 48,000 원</li>
+					</ul>
+					<hr>
+					<ul>
+						<li>관리 방법</li>
+						<li>방문 관리</li>
+					</ul>
+					<ul>
+						<li>관리 주기</li>
+						<li>6개월</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box box2">
+				<h4 class="box_header black">견적서</h4>
+				<div class="box_form">
+					<ul>
+						<li><div class="red">매장 지원금</div><div class="mini">(매장 추가 지원)</div></li>
+						<li><span class="s_box red"><input class="red" type="text" value="-  1,698,400 "> 원</span></li>
+					</ul>
+					<hr>
+					<ul class="mb">
+						<li>약정기간</li>
+						<li class="radio_wrap radio_wrap5">
+							<label>
+								<input type="radio" name="installment" value="12">
+								<span>12</span>
+							</label>
+							<label>
+								<input type="radio" name="installment" value="18">
+								<span>24</span>
+							</label>
+							<label>
+								<input type="radio" name="installment" value="24" checked>
+								<span>36</span>
+							</label>
+							<label>
+								<input type="radio" name="installment" value="30">
+								<span>48</span>
+							</label>
+							<label>
+								<input type="radio" name="installment" value="36">
+								<span>60</span>
+							</label>
+							<label>
+								<input type="radio" name="installment" value="48">
+								<span>72</span>
+							</label>
+						</li>
+					</ul>
+					<hr>
+					<ul>
+						<li class="small black"><span class="title">디아몰 예상 렌탈료(월)</span><div>1</div>
+						</li>
+						<li>48,000 원</li>
+					</ul>
+					<ul class="mt4">
+						<li class="small black"><span class="title">매장 지원금(월)</span><div>2</div>
+						</li>
+						<li>- 5,000 원</li>
+					</ul>
+					<hr>
+					<ul>
+						<li class="big black">월 렌탈료 <div>1</div><span class="plus">+</span>
+							<div>2</div>
+						</li>
+						<li class="big red">43,000 원</li>
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="dispath sel_btn">견적 발송</button>
+		</div><!-- wrapper -->
+		<nav>
+			<ul>
+				<li><a href="#">홈</a></li>
+				<li><a href="#" class="active" aria-current="page">견적요청</a></li>
+				<li><a href="#">상품등록</a></li>
+				<li><a href="#">통계</a></li>
+				<li><a href="#">MY</a></li>
+			</ul>
+		</nav><!-- nav -->
+	</div><!-- wrap -->
+
+	<div class="modal_wrap">
+		<div class="modal">
+			<p>고객님에게 작성한 <span class="red">견적서</span>가<br>
+				발송되었습니다.<br>
+				사장님의 견적을 자동등록 할까요?</p>
+			<div class="btn_wrap"><button type="button" class="red">등록해주세요</button><button type="button">아니오</button></div>
+		</div>
+	</div><!-- modal_wrap -->
+
+	<script src="../js/common.js"></script>
+</body>
+
+</html>
