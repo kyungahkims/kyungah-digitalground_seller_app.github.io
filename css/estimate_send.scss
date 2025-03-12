@@ -29,10 +29,24 @@
 .box {
 	margin-bottom: 12px;
 
+	&.box_p {
+		padding: 18px 16px;
+	}
+
 	.input_group {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		.name_price {
+			font-size: 14px;
+			font-weight: bold;
+
+			span {
+				font-weight: normal;
+				color: #888;
+			}
+		}
 
 		.name {
 			font-size: 16px;
@@ -92,6 +106,10 @@
 		border-radius: 4px;
 		border: 1px solid #ddd;
 		padding: 11px 12px;
+
+		&.mini {
+			height: 200px;
+		}
 	}
 }
 
@@ -215,6 +233,10 @@
 						font-weight: 500;
 						color: #ccc;
 					}
+				}
+
+				.mini {
+					font-size: 12px;
 				}
 			}
 

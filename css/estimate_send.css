@@ -32,6 +32,9 @@
 .box {
   margin-bottom: 12px;
 }
+.box.box_p {
+  padding: 18px 16px;
+}
 .box .input_group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,6 +45,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.box .input_group .name_price {
+  font-size: 14px;
+  font-weight: bold;
+}
+.box .input_group .name_price span {
+  font-weight: normal;
+  color: #888;
 }
 .box .input_group .name {
   font-size: 16px;
@@ -98,6 +109,9 @@
   border-radius: 4px;
   border: 1px solid #ddd;
   padding: 11px 12px;
+}
+.box textarea.mini {
+  height: 200px;
 }
 
 /* box2 */
@@ -216,6 +230,9 @@
   font-size: 11px;
   font-weight: 500;
   color: #ccc;
+}
+.box2 .box_form > ul li .mini {
+  font-size: 12px;
 }
 .box2 .box_form > ul .red {
   color: #f53b3b !important;
